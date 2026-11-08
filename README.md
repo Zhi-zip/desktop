@@ -1,5 +1,9 @@
 # Zhi-zip Desktop
 
+> [!IMPORTANT]
+> 原项目由zhi-xiaoer开发，[原版链接](https://github.com/zhi-xiaoer/Zhi-zip)
+
+---
 
 一款基于 Python 和 PySide6 开发的轻量级 GUI 压缩工具。
 
