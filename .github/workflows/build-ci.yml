@@ -53,15 +53,15 @@ jobs:
 
       - name: Build Windows
         if: runner.os == 'Windows'
-        run: pyinstaller --noconfirm --onedir --windowed --name Zhi --collect-all jieba --hidden-import rapidfuzz main.py
+        run: pyinstaller --noconfirm --onedir --windowed --name Zhi --collect-all jieba --hidden-import rapidfuzz Zhi-zip.py
 
       - name: Build macOS
         if: runner.os == 'macOS'
-        run: pyinstaller --noconfirm --onedir --windowed --name Zhi --osx-bundle-identifier com.zhi.app --collect-all jieba --hidden-import rapidfuzz main.py
+        run: pyinstaller --noconfirm --onedir --windowed --name Zhi --osx-bundle-identifier com.zhi.app --collect-all jieba --hidden-import rapidfuzz Zhi-zip.py
 
       - name: Build Linux
         if: runner.os == 'Linux'
-        run: pyinstaller --noconfirm --onedir --name Zhi --collect-all jieba --hidden-import rapidfuzz main.py
+        run: pyinstaller --noconfirm --onedir --name Zhi --collect-all jieba --hidden-import rapidfuzz Zhi-zip.py
 
       - name: Package Windows
         if: runner.os == 'Windows'
